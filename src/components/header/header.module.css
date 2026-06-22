@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 30px;
+  background-color: black;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
