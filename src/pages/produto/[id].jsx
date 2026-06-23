@@ -57,7 +57,7 @@ export default function ProdutoDetalhe() {
                 <h1 className={styles.title}>{title}</h1>
 
                 <div className={styles.priceContainer}>
-                  <span className={styles.price}></span>
+                  <span className={styles.price}>R$ {price}</span>
                   <p className={styles.installments}>ou 10x de sem juros</p>
                 </div>
 

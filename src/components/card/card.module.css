@@ -11,6 +11,12 @@
   margin: 30px;
 }
 
+.description {
+  font-size: 16px;
+  color: grey;
+  line-height: 1.6;
+}
+
 .image {
   height: 350px;
   width: 350px;
