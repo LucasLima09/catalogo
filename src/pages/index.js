@@ -8,17 +8,16 @@ export default function Home() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    try {
-      fetch("https://fakestoreapi.com/products")
-        .then((response) => response.json())
-        .then((data) => {
-          setProdutos(data);
-          setLoading(false);
-        });
-    } catch (error) {
-      console.log(error);
-      setLoading(false);
-    }
+    fetch("https://fakestoreapi.com/products")
+      .then((response) => response.json())
+      .then((data) => {
+        setProdutos(data);
+        setLoading(false);
+      })
+      .catch((error) => {
+        console.error(error);
+        setLoading(false);
+      });
   }, []);
 
   const renderProdutos = () => {
